@@ -33,7 +33,7 @@ function readInput() {
 
     if (document.getElementById("marriedYes").checked) {
         obj.married = true;
-    } else {
+    } else if(document.getElementById("marriedNo").checked){
         obj.married = false;
     }
     return obj;
