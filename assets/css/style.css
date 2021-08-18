@@ -1,6 +1,9 @@
+body{
+    background-color: #000;
+}
 .container, .resultContainer {
     margin: 3vh auto 0;
-    background-color: grey;
+    background-color: lightgrey;
     width: 40vw;
     border-radius: 9px;
 }
@@ -9,6 +12,10 @@
     text-align: center;
     padding: 2vh 0 2vh;
     border-bottom: 1px solid #000;
+}
+
+#incomeYear2Container {
+    display: none;
 }
 
 .resultContainer {
@@ -42,7 +49,7 @@
     width: 35%;
 }
 
-#incomeYear {
+#incomeYear, #incomeYear2 {
     width: 80%;
 }
 
