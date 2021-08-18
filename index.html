@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <p>Einkommenssteuerrechner</p>
+    <div class="taxContainer">
+      <div class="label">
+        <label for="incomeYear">Jahreseinkommen</label>
+      </div>
+      <div class="input">
+        <input type="text" name="" id="incomeYear" placeholder="45.000">
+      </div>
+    </div>
+    <div class="taxContainer">
+      <div class="label">
+        <label for="taxYear">Steuerjahr</label>
+      </div>
+      <div class="input">
+        <select name="taxYear" id="taxYear">
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+        </select>
+      </div>
+    </div>
+    <div class="taxContainer">
+      <div class="label">
+        <label for="taxYear">Kirchensteuer</label>
+      </div>
+      <div class="input">
+        <select name="taxChurch" id="taxYear">
+          <option value="no">Nein</option>
+          <option value="8">Ja 8%</option>
+          <option value="9">Ja 9%</option>
+        </select>
+      </div>
+    </div>
+    <div class="taxContainer">
+      <div class="label">
+        <label for="taxYear">Verheiratet</label>
+      </div>
+      <div class="input">
+        <input type="radio" name="married" id="marriedNo" checked="checked">
+        <label for="marriedNo">Nein</label>
+        <input type="radio" name="married " id="marriedYes">
+        <label for="marriedYes">Ja</label>
+      </div>
+    </div>
+    <div class="taxContainer">
+      <button id="calcTax" onclick="calc()">Berechnen</button>
+    </div>
+  </div>
+  <div class="resultContainer">
+    <div class="taxContainer"></div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

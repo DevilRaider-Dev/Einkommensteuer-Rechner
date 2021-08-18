@@ -1,0 +1,34 @@
+.container, .outputContainer {
+    margin: 5vh auto 0;
+    background-color: grey;
+    width: 40vw;
+    border-radius: 9px;
+}
+
+.container>p {
+    text-align: center;
+    padding: 2vh 0 2vh;
+    border-bottom: 1px solid #000;
+}
+
+.taxContainer {
+    display: flex;
+    padding-bottom: 3vh;
+}
+.label{
+    width: 70%;
+}
+.input{
+    width: 30%;
+}
+#incomeYear{
+    
+    width: 80%;
+}
+#taxYear{
+    width: 86%;
+}
+#calcTax{
+    width: 90%;
+    margin: 0 auto;
+}
