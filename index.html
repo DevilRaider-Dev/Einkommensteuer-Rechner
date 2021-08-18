@@ -23,16 +23,17 @@
     </div>
     <div class="taxContainer">
       <div class="label">
-        <label for="taxLabel">Steuerjahr</label>
+        <label for="taxYear">Steuerjahr</label>
       </div>
       <div class="input">
-        <select name="taxLabel" id="taxLabel">
+        <select name="taxYear" id="taxYear">
           <option value="2021">2021</option>
           <option value="2020">2020</option>
           <option value="2019">2019</option>
         </select>
       </div>
     </div>
+    <!--
     <div class="taxContainer">
       <div class="label">
         <label for="taxLabel">Kirchensteuer</label>
@@ -45,9 +46,10 @@
         </select>
       </div>
     </div>
+    -->
     <div class="taxContainer">
       <div class="label">
-        <label for="taxLabel">Verheiratet</label>
+        <label for="">Ehegattensplitting</label>
       </div>
       <div class="input">
         <label for="marriedNo">Nein</label>
@@ -57,11 +59,38 @@
       </div>
     </div>
     <div class="taxContainer">
-      <button id="calcTax" onclick="calc()">Berechnen</button>
+      <button id="calcTax" onclick="calcTax()">Berechnen</button>
     </div>
   </div>
   <div class="resultContainer">
-    <div class="taxContainer"></div>
+    <h2>Ergebnis</h2>
+    <div class="resContainer">
+      <p>Einkommensteuer</p>
+    </div>
+    <div class="resContainer">
+      <div class="label">
+        <label for="bruttoRes">Brutto gesamt</label>
+      </div>
+      <div class="input">
+        <p id="bruttoRes">00.000€</p>
+      </div>
+    </div>
+    <div class="resContainer">
+      <div class="label">
+        <label for="estRes">ESt gesamt</label>
+      </div>
+      <div class="input">
+        <p id="estRes">00.000€</p>
+      </div>
+    </div>
+    <div class="resContainer">
+      <div class="label">
+        <label for="nettoRes" class="bold">Netto gesamt</label>
+      </div>
+      <div class="input">
+        <p id="nettoRes" class="bold">00.000€</p>
+      </div>
+    </div>
   </div>
 
   <script src="assets/js/main.js"></script>

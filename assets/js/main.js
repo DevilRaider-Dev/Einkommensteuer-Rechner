@@ -14,3 +14,18 @@ Wir sollten eine Möglichkeit haben, das Jahr zu wählen, das wir berechnen woll
 2020: https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2020
 2019: https://www.finanz-tools.de/einkommensteuer/berechnung-formeln/2019
 */
+
+function readInput(){
+    let input = document.getElementById("incomeYear").value;
+    let year = document.getElementById("taxYear").value;
+    let married = false;
+    if(document.getElementById("marriedYes").checked){
+
+    }
+    console.log(input + " " + year)
+}
+
+function calcTax(){
+    document.getElementsByClassName("resultContainer")[0].style.display = "block"
+    readInput();
+}

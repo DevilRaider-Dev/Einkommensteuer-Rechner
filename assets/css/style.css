@@ -1,37 +1,61 @@
-.container, .outputContainer {
-    margin: 5vh auto 0;
+.container, .resultContainer {
+    margin: 3vh auto 0;
     background-color: grey;
     width: 40vw;
     border-radius: 9px;
 }
-.outputContainer{
-    /*Display None*/
-}
-.container>h1 {
+
+.container>h1, .resultContainer>h2 {
     text-align: center;
     padding: 2vh 0 2vh;
     border-bottom: 1px solid #000;
+}
+
+.resultContainer {
+    Display: None;
 }
 
 .taxContainer {
     display: flex;
     padding-bottom: 3vh;
 }
-.label{
-    width: 70%;
+
+.resContainer {
+    display: flex;
+    align-items: center;
+}
+
+.resContainer:last-of-type {
+    padding-bottom: 2vh;
+}
+
+.resContainer>p {
+    margin: 0 0 1% 5%;
+}
+
+.label {
+    width: 65%;
     padding-left: 5%;
 }
-.input{
-    width: 30%;
+
+.input {
+    width: 35%;
 }
-#incomeYear{
-    
-    width: 77%;
+
+#incomeYear {
+    width: 80%;
 }
-#taxLabel{
-    width: 83%;
+
+#taxYear {
+    width: 85%;
 }
-#calcTax{
+
+#calcTax {
     width: 90%;
     margin: 0 auto;
+}
+
+.bold {
+    font-weight: 600;
+    text-decoration: underline;
 }
