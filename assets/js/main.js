@@ -1,6 +1,6 @@
 
 let obj = { input: 0, year: 0, married: false, est: 0, res: 0 };
-let calcObj = { yA: 0, estA: 0, estB: 0, estC: 0, }
+let calcObj = { yA: 0, estA: 0, estB: 0 }
 
 function switchMarried() {
     if (readInput().married) {
@@ -16,7 +16,7 @@ function readInput() {
 
     if (document.getElementById("marriedYes").checked) {
         obj.married = true;
-    } else if(document.getElementById("marriedNo").checked){
+    } else if (document.getElementById("marriedNo").checked) {
         obj.married = false;
     }
     return obj;
@@ -104,7 +104,7 @@ function calc() {
             }
             break;
     }
-    
+
     obj.est = res;
     obj.res = obj.input - res;
 }
