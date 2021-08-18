@@ -39,10 +39,14 @@ function readInput() {
     return obj;
 }
 
+function numberWithDots(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 function writeOutput() {
-    document.getElementById("bruttoRes").innerHTML = obj.input.toFixed(2) + " €";
-    document.getElementById("estRes").innerHTML = obj.est.toFixed(2) + " €";
-    document.getElementById("nettoRes").innerHTML = obj.res.toFixed(2) + " €";
+    document.getElementById("bruttoRes").innerHTML = numberWithDots(obj.input.toFixed(2)) + " €";
+    document.getElementById("estRes").innerHTML = numberWithDots(obj.est.toFixed(2)) + " €";
+    document.getElementById("nettoRes").innerHTML = numberWithDots(obj.res.toFixed(2)) + " €";
 }
 
 function calcSplitting() {
