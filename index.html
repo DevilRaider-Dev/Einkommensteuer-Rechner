@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Einkommensteuer-Rechner</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
   <div class="container">
-    <p>Einkommenssteuerrechner</p>
+    <h1>Einkommensteuer-Rechner</h1>
     <div class="taxContainer">
       <div class="label">
         <label for="incomeYear">Jahreseinkommen</label>
@@ -23,10 +23,10 @@
     </div>
     <div class="taxContainer">
       <div class="label">
-        <label for="taxYear">Steuerjahr</label>
+        <label for="taxLabel">Steuerjahr</label>
       </div>
       <div class="input">
-        <select name="taxYear" id="taxYear">
+        <select name="taxLabel" id="taxLabel">
           <option value="2021">2021</option>
           <option value="2020">2020</option>
           <option value="2019">2019</option>
@@ -35,10 +35,10 @@
     </div>
     <div class="taxContainer">
       <div class="label">
-        <label for="taxYear">Kirchensteuer</label>
+        <label for="taxLabel">Kirchensteuer</label>
       </div>
       <div class="input">
-        <select name="taxChurch" id="taxYear">
+        <select name="taxChurch" id="taxLabel">
           <option value="no">Nein</option>
           <option value="8">Ja 8%</option>
           <option value="9">Ja 9%</option>
@@ -47,13 +47,13 @@
     </div>
     <div class="taxContainer">
       <div class="label">
-        <label for="taxYear">Verheiratet</label>
+        <label for="taxLabel">Verheiratet</label>
       </div>
       <div class="input">
-        <input type="radio" name="married" id="marriedNo" checked="checked">
         <label for="marriedNo">Nein</label>
-        <input type="radio" name="married " id="marriedYes">
+        <input type="radio" name="married" id="marriedNo" checked="checked">
         <label for="marriedYes">Ja</label>
+        <input type="radio" name="married" id="marriedYes">
       </div>
     </div>
     <div class="taxContainer">
